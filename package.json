@@ -1,12 +1,26 @@
 {
-  "name": "console-app",
+  "name": "mathlib",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple math expression solver library in JavaScript",
+  "keywords": [
+    "library",
+    "math",
+    "parser",
+    "expression-solver"
+  ],
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/theahmadzai/mathlib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theahmadzai/mathlib.git"
   },
-  "author": "",
+  "bugs": {
+    "url": "https://github.com/theahmadzai/mathlib/issues"
+  },
+  "scripts": {
+    "test": "node ./test"
+  },
+  "author": "Javed Ahmadzai <theahmadzai@hotmail.com>",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.4.0",
