@@ -3,12 +3,12 @@
 const fs = require('fs')
 const interpreter = require('./interpreter')
 
-module.exports = function(filePath = null) {
+module.exports = function(math = null) {
 
-  if(filePath === null) {
-    console.error('File path needed.')
+  if(math === null) {
+    console.error('No expression given.')
     return
   }
 
-  return interpreter(fs.readFileSync(filePath))
+  return interpreter(math.valueOf())
 }
