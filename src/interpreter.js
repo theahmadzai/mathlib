@@ -5,7 +5,7 @@ const {
   isDigit } = require('./type').charTypes
 
 const interpreter = (code) => {
-  return code.toString('ascii').split('\n').filter(line => line.length > 0).map(line => {
+  return code.split('\n').filter(line => line.length > 0).map(line => {
     const rpn = rpnParser(lexer(line))
 
     const stack = []
